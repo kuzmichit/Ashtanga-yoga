@@ -1,0 +1,127 @@
+.promo {
+  background-image: url('~/src/img/promo_background.png');
+  background-repeat: no-repeat;
+  height: 540px;
+
+  &-img {
+    @include col-width(5);
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 90px;
+      max-width: 300px;
+      min-height: 650px;
+    }
+  }
+
+  &-text {
+    @include col-width(7);
+    min-width: 550px;
+    display: flex;
+    flex-direction: column;
+    color: $color-text;
+    justify-content: center;
+
+    &__name {
+      text-transform: uppercase;
+      font-size: 30px;
+
+    }
+
+    &__title {
+      margin-top: 35px;
+      font-size: 60px;
+    }
+
+    &__description {
+      line-height: 1.5;
+      margin-top: 50px;
+    }
+
+
+  }
+
+  &__btn {
+    @include col-width(5);
+    display: block;
+    min-width: 370px;
+    margin-left: auto;
+    margin-top: 18px;
+
+  }
+
+  @media(max-width: 900px) {
+    justify-content: center;
+    text-align: center;
+
+    &-text {
+      @include col-width(11);
+
+      &__title {
+        text-align: center;
+      }
+
+      &__description {}
+    }
+
+    &-img {
+      display: none;
+    }
+
+    &__btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}
+
+// ---------------------benefits blockquote
+.benefits {
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &-item {
+    @include col-width(3);
+    margin-top: 225px;
+    min-width: 150px;
+
+    i {
+      font-size: 30px;
+      color: $color-primary-attenuato;
+      display: block;
+    }
+
+    &__title {
+      line-height: 2.5;
+      border-bottom: 1px solid $color-primary-attenuato;
+      font-size: 20px;
+      color: $color-primary-attenuato;
+      display: inline;
+      padding-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    &__text {
+      line-height: 1.5;
+      margin-top: 10px;
+      margin-left: 50px;
+    }
+  }
+
+  @media(max-width: 900px) {
+
+    &-item {
+      @include col-width(6);
+      margin-top: 50px;
+
+      i {
+        display: none;
+      }
+    }
+
+  }
+}

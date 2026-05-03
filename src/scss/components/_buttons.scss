@@ -1,0 +1,44 @@
+.button-github {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 4rem 0.7rem;
+  padding-bottom: 4.5rem;
+  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  z-index: 99;
+
+  i {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  transition: all 0.15s linear;
+
+  &:hover {
+    padding: 4.7rem 0.7rem;
+    padding-bottom: 4.7rem;
+  }
+}
+
+.btn {
+  height: 60px;
+  color: $color-white;
+  background-color: $color-primary;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 14px 20px 10px -7px $color-shadow-btn;
+  border: 1px groove lightgray;
+  position: relative;
+  border: none;
+
+  i {
+    padding-left: 10px;
+    transform: scale(2, 0.7);
+  }
+
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 2px;
+  border: 1px inset lightgray;
+}

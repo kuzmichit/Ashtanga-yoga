@@ -1,0 +1,80 @@
+.symptom {
+  margin-top: 100px;
+
+  &-text {
+    @include col-width(7);
+
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      height: 165px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    &__list {
+      padding-bottom: 50px;
+      background-color: $color-primary-background;
+
+      .symptom-list__item {
+        padding: 30px 10px 30px;
+        border-bottom: 1px solid $color-primary-attenuato;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        line-height: 2.5;
+
+        span {
+          padding-right: 20px;
+          color: $color-primary-attenuato;
+        }
+      }
+    }
+  }
+
+  &-img {
+    @include col-width(5);
+    padding-bottom: 50px;
+    background-color: $color-primary-background;
+    min-width: 450px;
+  }
+
+  &__btn {
+    @include col-width(5);
+    display: block;
+    min-width: 370px;
+    margin-left: auto;
+    margin-top: 18px;
+  }
+
+  @media(max-width: 920px) {
+    justify-content: center;
+    margin-top: 50px;
+
+    &-text {
+      @include col-width(11);
+
+      &__title {
+        text-align: center;
+      }
+    }
+
+    .symptom-list__item {
+      padding: 30px 20px 30px;
+    }
+
+    &-img {
+      display: none;
+    }
+
+    &__btn {
+      margin-left: auto;
+      margin-right: auto;
+      @include col-width(7);
+    }
+
+  }
+}
