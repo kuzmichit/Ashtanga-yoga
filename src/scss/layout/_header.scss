@@ -1,7 +1,14 @@
+@use "../base/reset" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/utilities" as *;
+
 .header {
-  height: 100px;
-  display: flex;
-  align-items: center;
+  .header__nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+  }
 
   &__logo {
     margin-right: 20px;
@@ -12,10 +19,25 @@
     }
   }
 
-  &__delivery {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+  }
+  &__menu-item {
     color: $text-grey;
-    padding: 0 10px;
+    padding: 10px 10px;
     min-width: 155px;
+    text-align: center;
+    border: 1px solid red;
+  }
+
+  &__menu-item-link {
+    white-space: nowrap;
+  }
+
+  &__our-history {
   }
 
   &__contacts {
@@ -23,12 +45,11 @@
     text-align: right;
     min-width: 180px;
 
-
-    .contacts__tel {}
+    .contacts__tel {
+    }
 
     .contacts__text {
       margin-top: 10px;
     }
   }
-
 }

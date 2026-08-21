@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .button-github {
   background-color: $color-black;
   color: $color-white;
