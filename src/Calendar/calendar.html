@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./src/css/calendar.css">
+		<link rel="stylesheet" href="./src/css/reset.css">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div class="calendar container" id="calendar">
+			<div class="calendar__container">
+				<div class="calendar__header">
+					<div class="button__left button-array" data-direction="-1"></div>
+					<h1 class="calendar-header__text">Gennaio</h1>
+					<div class="button__right button-array" data-direction="1"></div>
+				</div>
+				<div class="month">
+					<div class="list-dayname__container">
+						<ul class="list-dayname">
+							<li class="dayname">lu</li>
+							<li class="dayname">ma</li>
+							<li class="dayname">me</li>
+							<li class="dayname">gi</li>
+							<li class="dayname">ve</li>
+							<li class="dayname">sa</li>
+							<li class="dayname">do</li>
+						</ul>
+					</div>
+					<div class="day__container">
+						<ul class="list__days"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="./src/js/main.js" defer></script>
+	</body>
+
+</html>
