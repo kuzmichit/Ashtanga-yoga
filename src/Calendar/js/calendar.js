@@ -1,3 +1,5 @@
+import '../../scss/main.scss';
+import '../css/calendar.css'
 import { changeMonth} from './logic.js';
 import { deleteNode, setTitleMonth, circleDayHighlight } from './dom.js';
 import { CreateCalendar } from './calendar_factory.js';

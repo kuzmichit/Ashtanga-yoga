@@ -6,6 +6,4 @@ export const changeMonth = (direction, stateMonth) => {
 	// Impostiamo la nuova data (JavaScript gestisce automaticamente il cambio d'anno se sfori 0 o 11)
 
 	return stateMonth;
-
-	// Opzionale: aggiorna un eventuale testo che mostra "Mese Anno" nella pagina
 }

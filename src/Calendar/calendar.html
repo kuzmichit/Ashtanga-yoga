@@ -5,18 +5,45 @@
 		<meta charset="UTF-8">
 		<meta name="viewport"
 			content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./src/css/calendar.css">
-		<link rel="stylesheet" href="./src/css/reset.css">
 		<title>Document</title>
 	</head>
 
 	<body>
+		<header class="header container">
+			<nav class="header__nav">
+				<a class="header__logo" href="#">
+					<img src=".assets/logo.png" width="144" height="19"
+						alt="Логотип новостного сайта Performance" />
+				</a>
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a class="header__menu-item-link" href="#">Sciala</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item-link" href="#">La nostra
+							storia</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item-link" href="#">Notizie</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item-link" href="#">Contatti</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item-link active_link"
+							href="#">Prenotazione</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<div class="calendar container" id="calendar">
 			<div class="calendar__container">
 				<div class="calendar__header">
-					<div class="button__left button-array" data-direction="-1"></div>
+					<div class="button__left button-array" data-direction="-1">
+					</div>
 					<h1 class="calendar-header__text">Gennaio</h1>
-					<div class="button__right button-array" data-direction="1"></div>
+					<div class="button__right button-array" data-direction="1">
+					</div>
 				</div>
 				<div class="month">
 					<div class="list-dayname__container">
@@ -36,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-		<script type="module" src="./src/js/main.js" defer></script>
+		<script type="module" src="./js/calendar.js" defer></script>
 	</body>
 
 </html>
