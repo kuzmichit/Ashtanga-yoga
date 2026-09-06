@@ -24,14 +24,14 @@
 		align-items: center;
 		justify-content: end;
 		flex-grow: 1;
+		// border: 1px solid red;
 	}
 
 	&__menu-item {
 		color: $text-grey;
 		padding: 10px 10px;
-		min-width: 155px;
 		text-align: center;
-		border: 1px solid red;
+
 	}
 
 	&__menu-item-link {
