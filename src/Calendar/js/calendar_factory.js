@@ -8,6 +8,8 @@ const dayGet = (d) => { // получить номер дня недели, от
 export const CreateCalendar = (date) => {
 
 		let listDay = '';
+		
+		const currentDay = new Date(+date);
 		let currentDate = new Date(+date);
 		currentDate.setDate(1);
 		const previousStateDate = new Date(+currentDate);
@@ -20,7 +22,10 @@ export const CreateCalendar = (date) => {
 
 		// <li> ячейки календаря с датами
 		while (currentDate.getMonth() === currentMonth) {
-			listDay += `<li class="day__item day">${currentDate.getDate()}</li>`;
+				if (currentDate.getDay() === 0  ) {
+				// if (currentDate.getDate() < currentDay.getDate() ) {
+					listDay += `<li class="day__item_opacity day ">${currentDate.getDate()}</li>`;
+				} else listDay += `<li class="day__item day">${currentDate.getDate()}</li>`;
 			currentDate.setDate(currentDate.getDate() + 1);
 		}
 
