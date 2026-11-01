@@ -32,26 +32,3 @@
   line-height: 50px;
   font-weight: 700;
 }
-
-@media (max-width: 900px) {
-  .title {
-    font-size: 32px;
-    line-height: 30px;
-  }
-}
-
-// @mixin respond-to($breakpoint) {
-//   @if $breakpoint == desktop {
-//     @media (min-width: 1024px) {
-//       @content; // Your nested CSS rules get inserted here
-//     }
-//   } @else if $breakpoint == tablet {
-//     @media (min-width: 768px) {
-//       @content;
-//     }
-//   } @else if $breakpoint == mobile {
-//     @media (max-width: 767px) {
-//       @content;
-//     }
-//   }
-// }

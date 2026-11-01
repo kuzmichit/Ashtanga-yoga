@@ -5,7 +5,8 @@
 @use "abstracts/animations" as *;
 @use "abstracts/mixins" as *;
 
-@use "layout/header" as *;
+@use "layout/header/header" as *;
+@use "layout/header/header-responsive" as *;
 @use "layout/presentation" as *;
 // @use "layout/footer" as *;
 // @use "layout/promo" as *;

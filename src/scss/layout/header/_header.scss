@@ -1,0 +1,63 @@
+@use "../../base/reset" as *;
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/utilities" as *;
+@use "../../abstracts/mixins" as *;
+
+.header {
+  background-color: $color-primary-background;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+
+  &__nav {
+    a {
+      color: $color-white_links;
+    }
+  }
+
+  &__logo {
+    font-family: $font-logo;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    font-style: italic;
+    color: white;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+  }
+  &__menu-item {
+    color: $color-primary;
+    padding: 10px 10px;
+    min-width: 155px;
+    text-align: center;
+  }
+
+  &__menu-item-link {
+    white-space: nowrap;
+  }
+
+  &__our-history {
+  }
+
+  &__contacts {
+    margin-left: auto;
+    text-align: right;
+    min-width: 180px;
+
+    .contacts__tel {
+    }
+
+    .contacts__text {
+      margin-top: 10px;
+    }
+  }
+
+  &__burger-none {
+    display: none;
+  }
+}
