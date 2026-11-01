@@ -3,57 +3,56 @@
 @use "../abstracts/utilities" as *;
 
 .header {
-	.header__nav {
-		height: 100px;
-		display: flex;
-		align-items: center;
-		border: 1px solid green;
-	}
+  .header__nav {
+    display: flex;
+    align-items: center;
+    background-color: $color-primary-background;
+    padding: 40px;
 
-	&__logo {
-		margin-right: 20px;
+    a {
+      color: $color-white_links;
+    }
+  }
 
-		img {
-			min-width: 200px;
-			min-height: 30px;
-		}
-	}
+  &__logo {
+    font-family: $font-logo;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    font-style: italic;
+    color: white;
+  }
 
-	&__menu {
-		display: flex;
-		align-items: center;
-		justify-content: end;
-		flex-grow: 1;
-		// border: 1px solid red;
-	}
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+  }
+  &__menu-item {
+    color: $color-primary;
+    padding: 10px 10px;
+    min-width: 155px;
+    text-align: center;
+  }
 
-	&__menu-item {
-		color: $text-grey;
-		padding: 10px 10px;
-		text-align: center;
+  &__menu-item-link {
+    white-space: nowrap;
+  }
 
-	}
+  &__our-history {
+  }
 
-	&__menu-item-link {
-		white-space: nowrap;
-	}
+  &__contacts {
+    margin-left: auto;
+    text-align: right;
+    min-width: 180px;
 
-	&__our-history {}
+    .contacts__tel {
+    }
 
-	&__contacts {
-		margin-left: auto;
-		text-align: right;
-		min-width: 180px;
-
-		.contacts__tel {}
-
-		.contacts__text {
-			margin-top: 10px;
-		}
-	}
-
-	.active__link {
-		font-weight: 600;
-		color: $color-primary-active;
-	}
+    .contacts__text {
+      margin-top: 10px;
+    }
+  }
 }

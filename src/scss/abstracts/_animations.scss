@@ -1,0 +1,21 @@
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Stato iniziale
+.reveal {
+  opacity: 0;
+}
+
+// Effetto zoom
+.reveal--zoom.is-visible {
+  animation: zoomIn 2s ease-out forwards;
+}

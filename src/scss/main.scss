@@ -3,13 +3,14 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 @use "abstracts/utilities" as *;
+@use "abstracts/animations" as *;
 
 @use "layout/header" as *;
+@use "layout/presentation" as *;
 // @use "layout/footer" as *;
 // @use "layout/promo" as *;
 // @use "layout/symptom" as *;
 // @use "layout/famous" as *;
-// @use "layout/composition" as *;
 // @use "layout/packing" as  * as *;
 // @use "layout/warranty" as *;
 
@@ -18,3 +19,8 @@
 // @use "vendors/awesome/css/fontawesome" as *;
 // @use "vendors/awesome/css/solid" as *;
 // @use "vendors/awesome/css/regular" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meie+Script&family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap");

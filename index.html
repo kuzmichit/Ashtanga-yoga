@@ -1,51 +1,66 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap"
-			rel="stylesheet" />
-		<title>Ashtanga-yoga</title>
-	</head>
+    <title>Ashtanga-yoga</title>
+  </head>
 
-	<body>
-		<header class="header container">
-			<nav class="header__nav">
-				<a class="header__logo" href="">
-					<img src=".assets/logo.png" width="144" height="19"
-						alt="Логотип новостного сайта Performance" />
-				</a>
-				<ul class="header__menu">
-					<li class="header__menu-item">
-						<a class="header__menu-item-link" href="#">Sciala</a>
-					</li>
-					<li class="header__menu-item">
-						<a class="header__menu-item-link" href="#">La nostra
-							storia</a>
-					</li>
-					<li class="header__menu-item">
-						<a class="header__menu-item-link" href="#">Notizie</a>
-					</li>
-					<li class="header__menu-item">
-						<a class="header__menu-item-link" href="#">Contatti</a>
-					</li>
-					<li class="header__menu-item">
-						<a class="header__menu-item-link"
-							href="./src/Calendar/calendar.html">Prenotazione</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main class="main container"></main>
-		<script type="module" src="./src/js/main.js"></script>
-	</body>
-
+  <body>
+    <header class="header container">
+      <nav class="header__nav">
+        <!-- Navigazione desktop -->
+        <a class="header__logo" href="#"> SHALA EMPOLI </a>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-item-link" href="#">Shala</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-item-link" href="#">La nostra storia</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-item-link" href="#">Notizie</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-item-link" href="#">Contatti</a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-item-link"
+              href="./src/Calendar/calendar.html"
+              >Prenotazione</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main class="main container">
+      <section class="presentation">
+        <h1 class="presentation__title reveal reveal--zoom">
+          SHALA <br />
+          EMPOLI
+        </h1>
+        <h3 class="presentation__moto">
+          Il respiro. Il calore. La disciplina.
+        </h3>
+        <div class="presentation__vertical-line"></div>
+      </section>
+      <section class="philosophy"></section>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>
