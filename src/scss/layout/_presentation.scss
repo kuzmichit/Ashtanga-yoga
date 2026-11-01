@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .presentation {
   background-image:
@@ -17,8 +18,6 @@
     font-style: normal;
     font-size: 180px;
     color: $color-primary;
-
-    // animation: zoomIn 2s ease-out forwards;
   }
 
   &__moto {
@@ -38,26 +37,7 @@
     background: linear-gradient(to bottom, $color-secondary, transparent);
   }
 
-  @media (max-width: 920px) {
-    flex-wrap: wrap;
-
-    &-text {
-      justify-content: start;
-      flex-grow: 1;
-      margin-left: 10px;
-
-      &__list {
-        margin-top: 15px;
-
-        .list__item {
-          margin-top: 15px;
-        }
-      }
-
-      &__btn {
-        width: 100%;
-        margin: auto auto 20px auto;
-      }
-    }
+  @include respond(tab-port) {
+    display: none;
   }
 }

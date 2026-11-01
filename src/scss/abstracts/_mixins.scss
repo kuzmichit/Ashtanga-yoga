@@ -68,11 +68,9 @@ ORDER: BASE + Typography > generl layout + grid > page layout > components
 
     //1800px
   }
-
 }
 
 @mixin col-width($column, $margin: 0px) {
-
   $w: calc((100% / 12) * $column);
   width: calc($w - $margin);
 }
