@@ -24,7 +24,7 @@
 .btn {
   height: 60px;
   color: $color-white;
-  background-color: $color-primary;
+  background-color: $color-primary-background;
   text-transform: uppercase;
   text-align: center;
   box-shadow: 14px 20px 10px -7px $color-shadow-btn;
@@ -36,7 +36,6 @@
     padding-left: 10px;
     transform: scale(2, 0.7);
   }
-
 }
 
 .btn:active {
