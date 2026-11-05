@@ -4,21 +4,21 @@
 @use "../../abstracts/mixins" as *;
 
 .header {
-  @include respond(tablet) {
+  @include respond(tab-port) {
     position: relative;
 
     &__menu {
       display: none;
       position: absolute;
       top: 100%;
-      left: 0;
-      width: 100%;
+      right: 0;
+      flex-grow: 1;
       flex-direction: column;
       align-items: center;
-      gap: 2rem;
-      padding: 3rem 2rem;
-      background-color: $color-primary-background;
+      gap: 1rem;
+      padding: 2rem 0 0 0;
       z-index: 100;
+      background-color: black;
 
       &.is-open {
         display: flex;
@@ -26,7 +26,15 @@
     }
 
     &__menu-item {
+      width: 100%;
+      padding-right: 2rem;
       list-style: none;
+      text-align: end;
+    }
+
+    &__menu-item:last-child {
+      padding-top: 20px;
+      border-top: 1px solid $color-primary-attenuato;
     }
 
     &__burger {
@@ -70,9 +78,5 @@
         }
       }
     }
-  }
-
-  @include respond(phone-small) {
-    padding: 5px;
   }
 }
