@@ -27,14 +27,14 @@
     font-weight: 400;
     font-style: italic;
     font-size: 40px;
-    color: $color-secondary;
+    color: $color-secondary-text;
   }
 
   &__vertical-line {
     margin: 0 auto;
     width: 2px;
     height: 90px;
-    background: linear-gradient(to bottom, $color-secondary, transparent);
+    background: linear-gradient(to bottom, $color-secondary-text, transparent);
   }
 
   @include respond(tab-port) {

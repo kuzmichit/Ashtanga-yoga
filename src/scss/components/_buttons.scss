@@ -1,8 +1,8 @@
 @use "../abstracts/variables" as *;
 
 .button-github {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: $color-button-text;
+  color: $color-primary-text;
   padding: 4rem 0.7rem;
   padding-bottom: 4.5rem;
   clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
@@ -23,7 +23,7 @@
 
 .btn {
   height: 60px;
-  color: $color-white;
+  color: $color-primary-text;
   background-color: $color-primary-background;
   text-transform: uppercase;
   text-align: center;

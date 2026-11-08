@@ -16,47 +16,51 @@
   </head>
 
   <body>
-    <header class="header container">
-      <a class="header__logo" href="#"> SHALA EMPOLI </a>
-      <nav class="header__nav">
-        <!-- Navigazione desktop -->
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#">Shala</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#">La nostra storia</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#">Notizie</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-item-link" href="#">Contatti</a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-item-link"
-              href="./src/Calendar/calendar.html"
-              >Prenotazione</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- Navigazione mobile -->
-      <button
-        class="header__burger"
-        type="button"
-        aria-label="Apri menu"
-        aria-expanded="false"
-        aria-controls="header-menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <header id="header" class="container">
+      <div class="header">
+        <a class="header__logo" href="#"> SHALA EMPOLI </a>
+        <nav class="header__nav">
+          <!-- Navigazione desktop -->
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#presentation">Shala</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#philosophy"
+                >La nostra storia</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#news">Notizie</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#contacts">Contatti</a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__menu-item-link"
+                href="./src/Calendar/calendar.html"
+                >Prenotazione</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Navigazione mobile -->
+        <button
+          class="header__burger"
+          type="button"
+          aria-label="Apri menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
     <main class="main container">
-      <section class="presentation">
+      <section id="presentation" class="presentation">
         <h1 class="presentation__title reveal reveal--zoom">
           SHALA <br />
           EMPOLI
@@ -66,24 +70,27 @@
         </h3>
         <div class="presentation__vertical-line"></div>
       </section>
-      <section class="philosophy">
+      <section id="philosophy" class="philosophy">
         <h2 class="philosophy__title">
           Non è una spa.
+          <br />
           <span> È una pratica. </span>
         </h2>
-        <div class="philosophy__content">
-          <p class="philosophy__description">
+        <div class="philosophy__content row">
+          <p class="philosophy__description col">
             L'Ashtanga Yoga richiede dedizione. Non ci sono specchi, non c'è
             musica, non ci sono distrazioni. Solo il suono del tuo respiro
             Ujjayi e il calore generato dal tuo corpo.
           </p>
-          <p class="philosophy__description">
+          <p class="philosophy__description col">
             We practice in the traditional Mysore style. You move at your own
             pace, guided by your breath, while the teacher works with you
             individually. It is a silent, moving meditation.
           </p>
         </div>
       </section>
+      <section id="news" class="news"></section>
+      <section id="contacts" class="contacts"></section>
     </main>
     <script type="module" src="./src/js/main.js"></script>
   </body>
