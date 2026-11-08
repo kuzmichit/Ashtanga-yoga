@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.philosophy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  background-color: $color-black;
+
+  &__title {
+    font-size: 100pt;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  &__description {
+    line-height: 1.8;
+  }
+}
