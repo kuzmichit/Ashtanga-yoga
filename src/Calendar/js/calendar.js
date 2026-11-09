@@ -1,4 +1,4 @@
-import '../../scss/main.scss';
+import '/src/scss/main.scss';
 import '../css/calendar.css'
 import { changeMonth} from './logic.js';
 import { deleteNode, setTitleMonth, circleDayHighlight } from './dom.js';

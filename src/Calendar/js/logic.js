@@ -7,3 +7,8 @@ export const changeMonth = (direction, stateMonth) => {
 
 	return stateMonth;
 }
+
+// quando click controllo date solo giorni successivi o attuale
+export const checkDate = () => {
+
+}
